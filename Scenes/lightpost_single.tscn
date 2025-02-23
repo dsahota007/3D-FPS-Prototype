@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b31hngsd6fscs"]
+
+[ext_resource type="PackedScene" uid="uid://gkrctrstvx4v" path="res://Models/glbTiles/lightpost-single.glb" id="1_2e617"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3xqtn"]
+albedo_color = Color(0.294118, 0.294118, 0.294118, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nfwkh"]
+
+[node name="lightpost-single" instance=ExtResource("1_2e617")]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0)
+
+[node name="Asset3DLoader_sceneRoot" parent="." index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_3xqtn")
+surface_material_override/1 = SubResource("StandardMaterial3D_nfwkh")
